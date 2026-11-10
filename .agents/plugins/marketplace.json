@@ -1,0 +1,77 @@
+{
+  "name": "areal-official",
+  "interface": {
+    "displayName": "AReaL 官方"
+  },
+  "plugins": [
+    {
+      "name": "web-search",
+      "source": { "source": "local", "path": "./plugins/web-search" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Research",
+      "tags": ["featured"]
+    },
+    {
+      "name": "github",
+      "source": { "source": "local", "path": "./plugins/github" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Coding",
+      "tags": ["featured"]
+    },
+    {
+      "name": "context7",
+      "source": { "source": "local", "path": "./plugins/context7" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Coding",
+      "tags": ["featured"]
+    },
+    {
+      "name": "secret-guard",
+      "source": { "source": "local", "path": "./plugins/secret-guard" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Security",
+      "tags": ["featured"]
+    },
+    {
+      "name": "chrome-devtools",
+      "source": { "source": "local", "path": "./plugins/chrome-devtools" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Coding"
+    },
+    {
+      "name": "linear",
+      "source": { "source": "local", "path": "./plugins/linear" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "notion",
+      "source": { "source": "local", "path": "./plugins/notion" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "heptabase",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/heptameta/heptabase-agent-plugins.git",
+        "ref": "e886c7bd69f5cbad083bc62abe1eaacbf92bafe1",
+        "path": "plugins/heptabase"
+      },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
+    },
+    {
+      "name": "browser-control",
+      "source": { "source": "local", "path": "./plugins/browser-control" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Automation"
+    },
+    {
+      "name": "computer-control",
+      "source": { "source": "local", "path": "./plugins/computer-control" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Automation"
+    }
+  ]
+}

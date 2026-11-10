@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notion",
+  "version": "1.0.0",
+  "description": "Search, read and write Notion pages and databases through Notion's official remote MCP server. Sign in with your Notion account.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://developers.notion.com/docs/mcp",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Notion",
+        "shortDescription": "搜索、阅读和编辑 Notion 页面",
+        "developerName": "AReaL Harness",
+        "category": "Productivity",
+        "websiteUrl": "https://developers.notion.com/docs/mcp",
+        "defaultPrompt": [
+          "在 Notion 里找到这个项目的需求文档并总结"
+        ]
+      }
+    }
+  }
+}

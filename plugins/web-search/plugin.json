@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "web-search",
+  "version": "1.0.0",
+  "description": "Search the web and read pages as clean text through Exa's hosted MCP server. Works without an API key (rate limited).",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://exa.ai",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "网页搜索",
+        "shortDescription": "搜索网页并读取正文，回答时附来源",
+        "developerName": "AReaL Harness",
+        "category": "Research",
+        "websiteUrl": "https://exa.ai",
+        "privacyPolicyUrl": "https://exa.ai/privacy-policy",
+        "termsOfServiceUrl": "https://exa.ai/terms",
+        "defaultPrompt": [
+          "搜索这个问题的最新资料，并附上来源链接"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "$comment": "Maps connector / app IDs declared in plugin .app.json files to public remote MCP servers. Each entry's mcp and auth use the Agent Plugins 1.0.0 server and com.openai auth shapes, so the host can install it as an ordinary plugin MCP server. IDs not listed here are shown as not supported.",
+  "version": 1,
+  "services": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "aliases": [
+        "connector_76869538009648d5b282a4bb21c3d157"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://api.githubcopilot.com/mcp/"
+      },
+      "auth": {
+        "type": "api_key",
+        "headerScheme": "bearer"
+      },
+      "credentialHint": "GitHub personal access token (fine-grained; grant the repositories and permissions you want the agent to use)"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "aliases": [
+        "asdk_app_69a089a326dc8191b32a3f2553f5be2c"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.linear.app/mcp"
+      },
+      "auth": {
+        "type": "oauth",
+        "resource": "https://mcp.linear.app/mcp"
+      }
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "aliases": [
+        "asdk_app_69c18c28f1188191bf5b8445c4ab0a2e"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.notion.com/mcp"
+      },
+      "auth": {
+        "type": "oauth",
+        "resource": "https://mcp.notion.com"
+      }
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "aliases": [
+        "connector_68df038e0ba48191908c8434991bbac2"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.figma.com/mcp"
+      },
+      "auth": {
+        "type": "oauth",
+        "resource": "https://mcp.figma.com/mcp"
+      }
+    },
+    {
+      "id": "heptabase",
+      "name": "Heptabase",
+      "aliases": [
+        "asdk_app_697dad12bf0c8191b67b85418fad4078"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://api.heptabase.com/mcp"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "aliases": [
+        "connector_692de805e3ec8191834719067174a384"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "aliases": [
+        "connector_690a90ec05c881918afb6a55dc9bbaa1"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.vercel.com"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "aliases": [
+        "asdk_app_69d3e5ee6a708191baa733f7b8931995"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.supabase.com/mcp"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "aliases": [
+        "asdk_app_6983c208e5f8819196b7511519f97993"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.stripe.com"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "aliases": [
+        "asdk_app_699caef2d680819188727b0ddbb349dd"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.posthog.com/mcp"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "aliases": [
+        "connector_68df33b1a2d081918778431a9cfca8ba"
+      ],
+      "mcp": {
+        "type": "streamable-http",
+        "url": "https://mcp.canva.com/mcp"
+      },
+      "auth": {
+        "type": "oauth"
+      }
+    }
+  ]
+}

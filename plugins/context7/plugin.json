@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "context7",
+  "version": "1.0.0",
+  "description": "Look up current, version-specific documentation and code examples for open-source libraries through Context7's hosted MCP server. No account required.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://context7.com",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "库文档查询",
+        "shortDescription": "查开源库当前版本的文档和示例",
+        "developerName": "AReaL Harness",
+        "category": "Coding",
+        "websiteUrl": "https://context7.com",
+        "defaultPrompt": [
+          "查一下这个库当前版本的用法再写代码"
+        ]
+      }
+    }
+  }
+}

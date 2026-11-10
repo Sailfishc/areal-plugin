@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Work with GitHub repositories, issues, pull requests and Actions through GitHub's official remote MCP server. Sign in with a personal access token.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://github.com/github/github-mcp-server",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GitHub",
+        "shortDescription": "读写仓库、Issue、PR 和 Actions",
+        "developerName": "AReaL Harness",
+        "category": "Coding",
+        "websiteUrl": "https://github.com/github/github-mcp-server",
+        "defaultPrompt": [
+          "看看这个仓库最近的 PR 和失败的检查"
+        ]
+      }
+    }
+  }
+}

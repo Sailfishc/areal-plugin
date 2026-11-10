@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "secret-guard",
+  "version": "1.0.0",
+  "description": "Blocks agent reads, writes and shell commands that touch common secret files (.env, SSH and cloud credentials, private keys) before the tool runs.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "敏感文件保护",
+        "shortDescription": "拦下读写 .env、密钥和云凭据的工具调用",
+        "developerName": "AReaL Harness",
+        "category": "Security"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chrome-devtools",
+  "version": "1.0.0",
+  "description": "Let the agent drive a local Chrome through the Chrome DevTools MCP server to debug pages, inspect network and console, and measure performance. Requires Node.js and Chrome.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Chrome 调试",
+        "shortDescription": "让 Agent 打开本机 Chrome 调试网页",
+        "developerName": "AReaL Harness",
+        "category": "Coding",
+        "websiteUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "defaultPrompt": [
+          "打开这个页面，看看控制台和网络请求有没有报错"
+        ]
+      }
+    }
+  }
+}

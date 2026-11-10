@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "linear",
+  "version": "1.0.0",
+  "description": "Search, create and update Linear issues and projects through Linear's official remote MCP server. Sign in with your Linear account.",
+  "author": {
+    "name": "AReaL Harness"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Sailfishc/areal-plugin",
+  "homepage": "https://linear.app/docs/mcp",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Linear",
+        "shortDescription": "查找、创建和更新 Linear 任务",
+        "developerName": "AReaL Harness",
+        "category": "Productivity",
+        "websiteUrl": "https://linear.app/docs/mcp",
+        "defaultPrompt": [
+          "列出我名下这周要处理的 Linear 任务"
+        ]
+      }
+    }
+  }
+}
